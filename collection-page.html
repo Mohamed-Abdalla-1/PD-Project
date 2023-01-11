@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PD-project</title>
     <!-- Add a link to your css file here -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style-collection.css" />
     <link rel="shortcut icon" type="image/x-icon" href="foody food-1.ico" />
   </head>
 
@@ -23,53 +23,90 @@
           </div>
           <ul class="menu-items">
             <li><a href="schools-page.html">For Schools</a></li>
-            <li><a href="customers-page.html">For Collection</a></li>          
+            <li><a href="customers-page.html">For Collection</a></li>
             <li><a href="#about">Our Mission</a></li>
             <li><a href="#footer">Contact</a></li>
           </ul>
-          <img
+          <a href="/index.html">
+            <img
             src="images/foody food-1.png"
             alt="Logo picture"
             class="logo"
             width="100px"
           />
+          </a>
         </div>
       </nav>
     </header>
-    <main> 
+    <main>
+      <h1>
+        Ready <br />
+        To Reserve <br />
+        Your Meal
+      </h1>
+
+      <form action="" method="get" class="search">
+        <div>
+          <label for="PostCode">Your PostCode *</label>
+          <input id="PostCode" type="text" name="PostCode" required />
+        </div>
+        <div>
+          <label for="Type of food">Type of food *</label>
+          <select id="Type of food" name="Type of food" required>
+            <option value="" selected hidden>Select Type of food...</option>
+            <option value="Any">Any</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
+        </div>
+        <button class="button">Search</button>
+      </form>
+
+      <form action="" method="get" class="search-result">
+        <div>
+          <input id="agreement" type="checkbox" name="agreement" required/>
+          <label for="agreement"
+            >I agree with
+            <a id="terms" href="">Terms and Conditions.</a> *</label
+          >
+        </div>
+        <button class="button">Reserve</button>
+      </form>
     </main>
     <footer>
-        <div id="S">
-            <p>SUPPORT</p>
-            <p>PRESS</p>
-            <p>CAREERS</p>
-        </div>
-        <div id="C">
-            <a href="www.twitter.com"
-                ><img
-                class="social-icons"
-                src="images/contact-linked.png"
-                alt="Twitter Icon"
-            /></a>
-            <a href="www.facbook.com"
-                ><img
-                class="social-icons"
-                src="images/contact-face.png"
-                alt="Facebook Icon"
-            /></a>
-            <a href="www.instagram.com"
-                ><img
-                class="social-icons"
-                src="images/contact-insta.png"
-                alt="Instagram Icon"
-            /></a>
-            <p class="copyright">Copyright © FOODY FOOD CHERITY. All Rights Reserved.</p>
-        </div>
-        <div id="T">
-            <p>TERMS & CONDITIONS</p>
-            <p>PRIVACY POLICY</p>
-            <p>COOKIE POLICY</p>
-        </div>
+      <div id="S">
+        <p>SUPPORT</p>
+        <p>PRESS</p>
+        <p>CAREERS</p>
+      </div>
+      <div id="C">
+        <a href="www.twitter.com"
+          ><img
+            class="social-icons"
+            src="images/contact-linked.png"
+            alt="Twitter Icon"
+        /></a>
+        <a href="www.facbook.com"
+          ><img
+            class="social-icons"
+            src="images/contact-face.png"
+            alt="Facebook Icon"
+        /></a>
+        <a href="www.instagram.com"
+          ><img
+            class="social-icons"
+            src="images/contact-insta.png"
+            alt="Instagram Icon"
+        /></a>
+        <p class="copyright">
+          Copyright © FOODY FOOD CHERITY. All Rights Reserved.
+        </p>
+      </div>
+      <div id="T">
+        <p>TERMS & CONDITIONS</p>
+        <p>PRIVACY POLICY</p>
+        <p>COOKIE POLICY</p>
+      </div>
     </footer>
   </body>
 </html>
