@@ -29,11 +29,11 @@
           </ul>
           <a href="/index.html">
             <img
-            src="images/foody food-1.png"
-            alt="Logo picture"
-            class="logo"
-            width="100px"
-          />
+              src="images/foody food-1.png"
+              alt="Logo picture"
+              class="logo"
+              width="100px"
+            />
           </a>
         </div>
       </nav>
@@ -46,25 +46,32 @@
       </h1>
 
       <form action="" method="get" class="search">
-        <div>
-          <label for="PostCode">Your PostCode *</label>
-          <input id="PostCode" type="text" name="PostCode" required />
+        <div class="search-container">
+          <div>
+            <label for="PostCode">Your PostCode *</label>
+            <input id="PostCode" type="text" name="PostCode" required />
+          </div>
+          <div>
+            <label for="Type of food">Type of food *</label>
+            <select id="Type of food" name="Type of food" required>
+              <option value="" selected hidden>Select Type of food...</option>
+              <option value="Any">Any</option>
+              <option value="Vegan">Vegan</option>
+              <option value="Vegetarian">Vegetarian</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <label for="Type of food">Type of food *</label>
-          <select id="Type of food" name="Type of food" required>
-            <option value="" selected hidden>Select Type of food...</option>
-            <option value="Any">Any</option>
-            <option value="Vegan">Vegan</option>
-            <option value="Vegetarian">Vegetarian</option>
-          </select>
-        </div>
+
         <button class="button">Search</button>
+      </form>
+
+      <form action="" method="get" class="result">
+        
       </form>
 
       <form action="" method="get" class="search-result">
         <div>
-          <input id="agreement" type="checkbox" name="agreement" required/>
+          <input id="agreement" type="checkbox" name="agreement" required />
           <label for="agreement"
             >I agree with
             <a id="terms" href="">Terms and Conditions.</a> *</label
