@@ -232,10 +232,12 @@ main .search-result label {
 }
 
 h2 {
-  padding-bottom: 3px;
-  color: #0e6b33;
-  padding: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #010804;
+  padding: 0.1rem 1rem;
 }
+
 p {
   line-height: 1.4rem;
   font-size: smaller;
@@ -313,9 +315,31 @@ p {
 h3 {
   line-height: 1.8rem;
   padding: 0.1rem 0;
-  color: #35892a;
+  color: #030c01;
+  font-weight: 300;
+  font-size: 0.9rem;
+  display: inline;
 }
 
+main .result-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .result {
+  background-color: #f5fff9;
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main .result img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
 /* ............/footer/............ */
 
 footer {
@@ -455,6 +479,13 @@ footer div:nth-child(2) {
 /* ............/ DESKTOP /.................. */
 
 @media (min-width: 900px) {
+  /* main .result-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  } */
+
   .navbar {
     height: 70px;
   }

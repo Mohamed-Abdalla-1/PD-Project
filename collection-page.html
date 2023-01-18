@@ -62,23 +62,57 @@
           </div>
         </div>
 
-        <button class="button">Search</button>
+        <button class="button" id="search-button" type="button">Search</button>
       </form>
 
-      <form action="" method="get" class="result">
-        
-      </form>
-
-      <form action="" method="get" class="search-result">
-        <div>
-          <input id="agreement" type="checkbox" name="agreement" required />
-          <label for="agreement"
-            >I agree with
-            <a id="terms" href="">Terms and Conditions.</a> *</label
-          >
+      <!-- <form action="" method="get" class="result"></form> -->
+      <div class="result-container">
+        <div class="result">
+          <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
+          <h2>Roast Chicken with Potato and Gravy</h2>
+          <h3>Distance: 0.2mil</h3>
+          <h3>Collect by: 15:00</h3>
         </div>
-        <button class="button">Reserve</button>
-      </form>
+
+        <div class="result">
+          <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
+          <h2>Roast Chicken with Potato and Gravy</h2>
+          <h3>Distance: 0.5mil</h3>
+          <h3>Collect by: 15:00</h3>
+        </div>
+
+        <div class="result">
+          <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
+          <h2>Roast Chicken with Potato and Gravy</h2>
+            <h3>Distance: 1mil</h3>
+            <h3>Collect by: 15:00</h3>
+          </div>
+
+          <div class="result">
+            <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
+            <h2>Roast Chicken with Potato and Gravy</h2>
+            <h3>Distance: 1.5mil</h3>
+            <h3>Collect by: 15:00</h3>
+          </div>
+
+          <div class="result">
+            <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
+            <h2>Roast Chicken with Potato and Gravy</h2>
+            <h3>Distance: 2mil</h3>
+            <h3>Collect by: 15:00</h3>
+          </div>
+
+        <form action="" method="get" class="search-result">
+          <div>
+            <input id="agreement" type="checkbox" name="agreement" required />
+            <label for="agreement"
+              >I agree with
+              <a id="terms" href="">Terms and Conditions.</a> *</label
+            >
+          </div>
+          <button class="button">Reserve</button>
+        </form>
+      </div>
     </main>
     <footer>
       <div id="S">
@@ -115,5 +149,15 @@
         <p>COOKIE POLICY</p>
       </div>
     </footer>
+
+    <script>
+      let result = document.querySelector(".result-container");
+
+      let search = document.querySelector("#search-button");
+
+      search.addEventListener("click", () => {
+        result.style.display = "flex";
+      });
+    </script>
   </body>
 </html>
