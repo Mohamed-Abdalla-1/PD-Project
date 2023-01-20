@@ -8,6 +8,15 @@
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="CSS/style-school.css" />
     <link rel="shortcut icon" type="image/x-icon" href="foody food-1.ico" />
+      
+      <script>
+
+        let buttonBt = document.querySelector('.button');
+        buttonBt.addEventListener('click', () => {
+          window.alert('It is a demo version. Stay with us.')
+        })
+
+      </script>
   </head>
 
   <body>
@@ -35,6 +44,7 @@
           />
         </div>
       </nav>
+      
     </header>
     
     
@@ -49,11 +59,11 @@
 <form action="" method="get" class="search">
 <div>
   <label for="UserName">User Name </label>
-  <input id="UserName" type="text" minLength="2" maxLength="20" name="UserName" required />
+  <input id="UserName" type="text" minLength="2" maxLength="15" name="UserName" required />
 </div>
 <div>
   <label for="Password">Password</label>
-  <input id="Password" type="password" minLength="5" maxLength="10" name="Password" required />
+  <input id="Password" type="password" minLength="5" maxLength="20" name="Password" required />
 </div>
 <button class="button">Login</button>
 <div>
@@ -129,5 +139,8 @@
             <p>COOKIE POLICY</p>
         </div>
     </footer>
+
+
+
   </body>
 </html>
