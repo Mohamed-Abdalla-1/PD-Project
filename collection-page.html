@@ -66,15 +66,22 @@
       </form>
 
       <!-- <form action="" method="get" class="result"></form> -->
-      <div class="result-container">
+              <form action="" method="get" class="result-container">
+      <!-- <div class="result-container"> -->
+
         <div class="result">
+          <input id="Karma-orange" type="radio" name="colour" value="Karma orange" />
+          <label for="Karma-orange">
           <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
           <h2>Roast Chicken with Potato and Gravy</h2>
           <h3>Distance: 0.2mil</h3>
           <h3>Collect by: 15:00</h3>
+         </label>
         </div>
 
         <div class="result">
+                    <input id="2" type="radio" name="colour" value="Karma orange" />
+          <label for="2">          
           <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
           <h2>Roast Chicken with Potato and Gravy</h2>
           <h3>Distance: 0.5mil</h3>
@@ -82,6 +89,8 @@
         </div>
 
         <div class="result">
+                    <input id="3" type="radio" name="colour" value="Karma orange" />
+          <label for="3">
           <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
           <h2>Roast Chicken with Potato and Gravy</h2>
           <h3>Distance: 1mil</h3>
@@ -89,6 +98,8 @@
         </div>
 
         <div class="result">
+                    <input id="4" type="radio" name="colour" value="Karma orange" />
+          <label for="4">
           <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
           <h2>Roast Chicken with Potato and Gravy</h2>
           <h3>Distance: 1.5mil</h3>
@@ -96,13 +107,15 @@
         </div>
 
         <div class="result">
+                    <input id="5" type="radio" name="colour" value="Karma orange" />
+          <label for="5">
           <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
           <h2>Roast Chicken with Potato and Gravy</h2>
           <h3>Distance: 2mil</h3>
           <h3>Collect by: 15:00</h3>
         </div>
 
-        <form action="" method="get" class="search-result">
+<div class="search-result" >
           <div>
             <input id="agreement" type="checkbox" name="agreement" required />
             <label for="agreement"
@@ -111,7 +124,12 @@
             >
           </div>
           <button class="button">Reserve</button>
+
+
+</div>
         </form>
+
+
       </div>
     </main>
     <footer>
@@ -159,6 +177,8 @@
 
       search.addEventListener("click", () => {
         result.style.display = "flex";
+        document.querySelector(".search").style.display="none"
+
       });
     </script>
   </body>
