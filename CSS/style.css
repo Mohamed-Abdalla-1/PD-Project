@@ -8,6 +8,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .html {
@@ -444,7 +445,7 @@ footer div:nth-child(2) {
   .hero-background {
     margin-top: 60px;
   }
-    .navbar .menu-items li {
+  .navbar .menu-items li {
     font-size: 1.4rem;
     padding-left: 1rem;
   }
@@ -483,7 +484,6 @@ footer div:nth-child(2) {
     height: auto;
   }
   .sec {
-
     flex-direction: row;
     display: flex;
     gap: 2rem;
