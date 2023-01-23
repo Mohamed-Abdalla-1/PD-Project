@@ -8,15 +8,13 @@
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="CSS/style-school.css" />
     <link rel="shortcut icon" type="image/x-icon" href="foody food-1.ico" />
-      
-      <script>
 
-        let buttonBt = document.querySelector('#L');
-        buttonBt.addEventListener('click', () => {
-          alert('It is a demo version. Stay with us.')
-        })
-
-      </script>
+    <script>
+      let buttonBt = document.querySelector("#L");
+      buttonBt.addEventListener("click", () => {
+        alert("It is a demo version. Stay with us.");
+      });
+    </script>
   </head>
 
   <body>
@@ -32,23 +30,23 @@
           </div>
           <ul class="menu-items">
             <li><a href="schools-page.html">For Schools</a></li>
-            <li><a href="customers-page.html">For Collection</a></li>          
-            <li><a href="#about">Our Mission</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="collection-page.html">For Collection</a></li>
+
+            <li><a href="#S">Contact</a></li>
           </ul>
-          <img
-            src="images/foody food-1.png"
-            alt="Logo picture"
-            class="logo"
-            width="100px"
-          />
+          <a href="/index.html">
+            <img
+              src="images/foody food-1.png"
+              alt="Logo picture"
+              class="logo"
+              width="100px"
+            />
+          </a>
         </div>
       </nav>
-      
     </header>
-    
-    
-    <main> 
+
+    <main>
       <h1>
         Join <br />
         Our Charity <br />
@@ -56,93 +54,108 @@
         Saving Food
       </h1>
 
-<form action="" method="get" class="search">
-<div>
-  <label for="UserName">User Name </label>
-  <input id="UserName" type="text" minLength="2" maxLength="15" name="UserName" required />
-</div>
-<div>
-  <label for="Password">Password</label>
-  <input id="Password" type="password" minLength="5" maxLength="20" name="Password" required />
-</div>
-<button class="button" id="L" type="button">Login</button>
-</form>
-<form action="" method="get" class="search">
-<div>
-  <label for="NameOfFood">Name Of Food </label>
-  <input id="NameOfFood" type="text" name="NameOfFood" required />
-</div>
-<div>
-  <label for="TypeOfFood">Type Of Food </label>
-  <select id="TypeOfFood" name="TypeOfFood" required>
-  <option value="" selected hidden>Choose one</option>
-  <option value="Any">Any</option>
-  <option value="Vegan">Vegan</option>
-  <option value="Vegetarian">Vegetarian</option>
-  </select>
-</div>
-<div>
-  <label for="HowManyDishes">How Many Dishes </label>
-  <select id="HowManyDishes" name="HowManyDishes" required>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  </select>
-</div>
-<div>
-  <fieldset>
-    <legend>Allergic:</legend>
-    <label for="Eggs">Eggs</label>
-    <input id="Eggs" type="checkbox" name="Eggs"/>
-    <label for="Fish">Fish</label>
-    <input id="Fish" type="checkbox" name="Fish" />
-    <label for="Milk">Milk</label>
-    <input id="Milk" type="checkbox" name="Milk" />
-    <label for="Soya">Soya</label>
-    <input id="Soya" type="checkbox" name="Soya" />
-  </fieldset>
-</div>
-<button class="button" type="button">Add</button>
-</form>
+      <form action="" method="get" class="search">
+        <div>
+          <label for="UserName">User Name </label>
+          <input
+            id="UserName"
+            type="text"
+            minlength="2"
+            maxlength="15"
+            name="UserName"
+            required
+          />
+        </div>
+        <div>
+          <label for="Password">Password</label>
+          <input
+            id="Password"
+            type="password"
+            minlength="5"
+            maxlength="20"
+            name="Password"
+            required
+          />
+        </div>
+        <button class="button" id="L" type="button">Login</button>
+      </form>
+      <form action="" method="get" class="search">
+        <div>
+          <label for="NameOfFood">Name Of Food </label>
+          <input id="NameOfFood" type="text" name="NameOfFood" required />
+        </div>
+        <div>
+          <label for="TypeOfFood">Type Of Food </label>
+          <select id="TypeOfFood" name="TypeOfFood" required>
+            <option value="" selected hidden>Choose one</option>
+            <option value="Any">Any</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
+        </div>
+        <div>
+          <label for="HowManyDishes">How Many Dishes </label>
+          <select id="HowManyDishes" name="HowManyDishes" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Allergic:</legend>
+            <label for="Eggs">Eggs</label>
+            <input id="Eggs" type="checkbox" name="Eggs" />
+            <label for="Fish">Fish</label>
+            <input id="Fish" type="checkbox" name="Fish" />
+            <label for="Milk">Milk</label>
+            <input id="Milk" type="checkbox" name="Milk" />
+            <label for="Soya">Soya</label>
+            <input id="Soya" type="checkbox" name="Soya" />
+          </fieldset>
+        </div>
+        <button class="button" type="button">Add</button>
+      </form>
     </main>
 
     <footer>
-        <div id="S">
-            <p>SUPPORT</p>
-            <p>PRESS</p>
-            <p>CAREERS</p>
-        </div>
-        <div id="C">
-            <a href="www.twitter.com"
-                ><img
-                class="social-icons"
-                src="images/contact-linked.png"
-                alt="Twitter Icon"
-            /></a>
-            <a href="www.facbook.com"
-                ><img
-                class="social-icons"
-                src="images/contact-face.png"
-                alt="Facebook Icon"
-            /></a>
-            <a href="www.instagram.com"
-                ><img
-                class="social-icons"
-                src="images/contact-insta.png"
-                alt="Instagram Icon"
-            /></a>
-            <p class="copyright">Copyright © FOODY FOOD CHERITY. All Rights Reserved.</p>
-        </div>
-        <div id="T">
-            <p>TERMS & CONDITIONS</p>
-            <p>PRIVACY POLICY</p>
-            <p>COOKIE POLICY</p>
-        </div>
+      <div id="S">
+        <p>SUPPORT</p>
+        <p>PRESS</p>
+        <p>CAREERS</p>
+      </div>
+      <div id="C">
+        <a href="https://www.linkedin.com">
+          <img
+            class="social-icons"
+            src="images/contact-linked.png"
+            alt="Twitter Icon"
+          />
+        </a>
+        <a href="https://www.facebook.com">
+          <img
+            class="social-icons"
+            src="images/contact-face.png"
+            alt="Facebook Icon"
+          />
+        </a>
+        <a href="https://www.instagram.com">
+          <img
+            class="social-icons"
+            src="images/contact-insta.png"
+            alt="Instagram Icon"
+          />
+        </a>
+        <p class="copyright">Copyright © WasteNot CHARITY. All Rights Reserved.</p>
+        </p>
+      </div>
+      <div id="T">
+        <p>TERMS & CONDITIONS</p>
+        <p>PRIVACY POLICY</p>
+        <p>COOKIE POLICY</p>
+      </div>
     </footer>
-
-
-
   </body>
 </html>
