@@ -122,6 +122,17 @@
           </div>
         </div>
 
+        <div class="meal">
+          <input id="6" type="radio" name="colour" value="Karma orange" />
+          <div class="result">                       
+            <label for="6">
+            <img src="/images/faris-mohammed-FNufjdEresI-unsplash.jpg" alt="" />
+            <h2>Roast Chicken with Potato and Gravy</h2>
+            <h3>Distance: 2mil</h3>
+            <h3>Collect by: 15:00</h3>
+          </div>
+        </div>
+
         <div class="search-result" >
           <div>
             <input id="agreement" type="checkbox" name="agreement" required />
@@ -130,7 +141,7 @@
               <a id="terms" href="">Terms and Conditions.</a> *</label
             >
           </div>
-          <button class="button">Reserve</button>
+          <button class="button" id="reserve" type="button">Reserve</button>
         </div>
       </form>
       <!-- </div> -->
@@ -179,9 +190,17 @@
       let search = document.querySelector("#search-button");
 
       search.addEventListener("click", () => {
+        if (window.innerWidth < 900) {
         result.style.display = "flex";
+        } else {
+        result.style.display = "grid";
+        }
         document.querySelector(".search").style.display="none"
 
+      });
+
+      document.querySelector("#reserve").addEventListener("click", () => {
+        alert("Thanks for visiting. It is a demo version. Stay with us.");
       });
     </script>
   </body>
